@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Processing</title>
+</head>
+<body>
+    <h1>Upload Excel File</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="excel_file" accept=".xlsx">
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if message %}
+    <div>
+        <p>{{ message }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
